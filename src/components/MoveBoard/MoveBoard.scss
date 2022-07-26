@@ -1,0 +1,29 @@
+.move-board {
+    h4 {
+        margin: 10px 0 20px;
+        padding: 0;
+    }
+    ul {
+        height: 200px;
+        margin: 0 0 20px;
+        overflow-y: auto;
+        list-style: none;
+        padding: 0;
+    }
+    li {
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        padding: 10px;
+        &:hover,
+        &.active {
+            background-color: #f5f5f5;
+            color: orange;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .move-board {
+        margin-top: 20px;
+    }
+}

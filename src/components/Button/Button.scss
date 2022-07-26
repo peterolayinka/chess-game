@@ -1,0 +1,65 @@
+.btn {
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.full-btn {
+    width: 100%;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.primary-btn {
+    background-color: #00bcd4;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    &:hover {
+        background-color: #00acc1;
+        color: #fff;
+    }
+}
+
+.cancel-btn {
+    background-color: #ff9800;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    &:hover {
+        background-color: #f57c00;
+        color: #fff;
+    }
+}
+
+.mobile-nav--btn {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 768px) {
+    .hide-mobile {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hide-desktop {
+        display: none;
+    }
+}

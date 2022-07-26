@@ -1,10 +1,19 @@
-# Getting Started with Create React App
+# Overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A web application that enables users user play the chess game.
 
-## Available Scripts
+## How it works
 
-In the project directory, you can run:
+This is a React app that integrates the chess.js and chessboardjsx library to build an interactive game that enables you:
+
+- Parameterize game duration
+- Undo and redo game moves
+- Uses react context to store state across all components
+- Caches the game state in the local storage using custom React hooks
+- Play a responsive chess game that can be played on a mobile phone.
+
+Sketch: https://excalidraw.com/#json=VFIeyW-YxF_6zHUSR25Xy,kVFtIuW_UjnNUfRqoUJulQ
+Video: https://www.loom.com/share/480f0bcc8caa4e85bb536a57a3fab4fb
 
 ### `npm start`
 
@@ -29,42 +38,23 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Test Driven Approach
+TDD was utilized to build out this game by checking for the following before building out the logic and interface:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Ensure ChessBoard is rendered
+- Ensure timer is rendered
+- Ensure the Players name is displayed
+- Ensure player's moves are rendered
+- Ensure the cancel button is rendered
+- Ensure the back and forward button is displayed
+- Ensure imported chess logic/library is functional
+- Ensure the back button can go back in game time and history
+- Ensure the forward and backward button is functional
+- Ensure the result page is rendered appropriately
+- Ensure the game can be cancelled
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Requirements/Tools:
+- [Chess visualization library](https://chessboardjsx.com/custom)
+- [Chess Logic Library](https://github.com/jhlywa/chess.js/#game_over)
+- Local Storage
+- [Javascript/React.js](https://reactjs.org/)
