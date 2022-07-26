@@ -15,6 +15,10 @@ This is a React app that integrates the chess.js and chessboardjsx library to bu
 Sketch: https://excalidraw.com/#json=VFIeyW-YxF_6zHUSR25Xy,kVFtIuW_UjnNUfRqoUJulQ
 Video: https://www.loom.com/share/480f0bcc8caa4e85bb536a57a3fab4fb
 
+### `npm install`
+
+This is used to install all the necessary Requirements
+
 ### `npm start`
 
 Runs the app in the development mode.\
